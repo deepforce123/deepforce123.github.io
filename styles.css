@@ -19,6 +19,7 @@ h2 {
     text-shadow: 4px 4px #445e9e;
 }
 
+
 .nameTitle {
     padding-top: 250px;
     padding-right: 100px;
@@ -87,9 +88,11 @@ h2 {
     .contactMe h2,
     .aboutMe h2 {
         font-size: 20px;
+        text-shadow: 1px 1px #445e9e;
     }
     .nameTitle {
         font-size: 40px;
+        padding-top: 0px;
     }
 }
 
@@ -104,6 +107,7 @@ h2 {
     }
     .nameTitle {
         font-size: 30px;
+        text-shadow: 1.2px 1.2px #445e9e;
     }
 }
 
@@ -151,13 +155,15 @@ h2 {
     width: 250px;
     justify-content: center;
 }
-@media (max-width: 1300px) {
+
+@media (max-width: 1000px) {
     .navbar__logo {
         visibility: hidden;
     }
     .navbar__item {
         width: 120px;
-        font-size: 20px;
+        font-size: 10px;
+        height: 20px;
     }
     .navbar__menu {
         display: flex;
@@ -167,6 +173,9 @@ h2 {
     }
     .navbar__container{
         justify-content: center;
+    }
+    .navbar {
+        height: 30px;
     }
   }
 
@@ -217,7 +226,6 @@ h2 {
     margin: 0 auto;
     border: 2px solid black;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .portfolio-grid-item:hover img {
@@ -285,6 +293,13 @@ h2 {
     text-shadow: 2px 2px #000000;
 }
 
+@media (max-width: 1000px) {
+    .price-txt {
+        font-size: 20px;
+        text-shadow: 1px 1px #000000;
+    }
+}
+
 .sale-grid-item:hover .price-txt-overlay {
     opacity: 1;
 }
@@ -294,15 +309,7 @@ h2 {
     text-align: center;
     color: #d5cfd3;
 
-    padding-left: 50px;
-    margin-left: 250px;
-
-    padding-top: 25px;
-    margin-top: px;
-
-    padding-right: 50px;
-    margin-right: 250px;
-
+    padding: 5% 0;
     padding-bottom: 25px;
 
 }
@@ -312,19 +319,12 @@ h2 {
     text-align: center;
     color: #d5cfd3;
 
-    padding-left: 50px;
-    margin-left: 250px;
 
-    padding-top: 25px;
-    margin-top: px;
-
-    padding-right: 50px;
-    margin-right: 250px;
 
     padding-bottom: 25px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .sale-offsale-guide-txt {
         font-size: 20px;
     }
@@ -382,4 +382,20 @@ h2 {
     transform: translate3d(0, 250px, 0);
 }
 
-
+@media (max-width: 1000px) {
+    .aboutMe,
+    .contactMe {
+        font-size: 10px;
+    }
+    .contactMe h2,
+    .aboutMe h2 {
+        font-size: 20px;
+    }
+    .nameTitle {
+        font-size: 40px;
+    }
+    .button-down {
+        visibility: hidden;
+        padding-top: 0px;
+    }
+}
