@@ -324,12 +324,20 @@ h2 {
     padding-bottom: 25px;
 }
 
+.sale-offsale-guide-txt,
+.sale-hover-guide-txt {
+    text-shadow: 2px 2px #000000;
+}
+
+
 @media (max-width: 1200px) {
     .sale-offsale-guide-txt {
         font-size: 20px;
+        text-shadow: 1px 1px #000000;
     }
     .sale-hover-guide-txt {
         font-size: 40px;
+        text-shadow: 1px 1px #000000;
     }
 }
 
