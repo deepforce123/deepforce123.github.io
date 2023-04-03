@@ -374,6 +374,24 @@ h2 {
 }
 
 
+.df-watermark-container {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 99;
+    max-width: 150px;
+    color: #d5cfd3;
+    text-align: center;
+    scale: 130%;
+}
+
+@media (max-width: 1300px) {
+    .df-watermark-container {
+        visibility: hidden;
+    }
+}
+
+
 .button-down {
     position: relative;
     padding: 5px;
